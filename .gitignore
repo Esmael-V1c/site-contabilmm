@@ -1,0 +1,8 @@
+.reference/
+node_modules/
+*.log
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
