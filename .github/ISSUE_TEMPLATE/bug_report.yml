@@ -1,0 +1,35 @@
+name: Relatar problema
+description: Conte o que aconteceu e como reproduzir.
+title: "[Erro] "
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Página ou recurso afetado
+      placeholder: Ex. contato.html, menu ou vitrine de clientes
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Passos para reproduzir
+      description: Use dados fictícios nos exemplos.
+      placeholder: "1. Abra a página…\n2. Clique em…\n3. Observe…"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado e resultado observado
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Navegador e dispositivo
+      placeholder: Ex. Chrome no Windows, Safari no iPhone
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Imagens ou detalhes adicionais
+      description: Remova dados pessoais e credenciais antes de anexar arquivos.

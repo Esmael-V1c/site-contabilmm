@@ -1,0 +1,480 @@
+[
+  {
+    "slug": "dc-instalacoes-hidraulicas",
+    "name": "D&C Instalações Hidráulicas",
+    "original": "assets/clients/originals/dc-instalacoes-hidraulicas.jpg",
+    "width": 512,
+    "height": 400,
+    "restored": null,
+    "variants": [
+      {
+        "src": "assets/clients/dc-instalacoes-hidraulicas-480.webp",
+        "width": 480,
+        "height": 375,
+        "bytes": 16220
+      },
+      {
+        "src": "assets/clients/dc-instalacoes-hidraulicas-960.webp",
+        "width": 512,
+        "height": 400,
+        "bytes": 17770
+      }
+    ]
+  },
+  {
+    "slug": "revale-engenharia",
+    "name": "Revale Engenharia",
+    "original": "assets/clients/originals/revale-engenharia.jpg",
+    "width": 852,
+    "height": 831,
+    "restored": null,
+    "variants": [
+      {
+        "src": "assets/clients/revale-engenharia-480.webp",
+        "width": 480,
+        "height": 468,
+        "bytes": 18578
+      },
+      {
+        "src": "assets/clients/revale-engenharia-960.webp",
+        "width": 852,
+        "height": 831,
+        "bytes": 35824
+      }
+    ]
+  },
+  {
+    "slug": "impacto-solucoes-graficas",
+    "name": "Impacto Soluções Gráficas",
+    "original": "assets/clients/originals/impacto-solucoes-graficas.jpg",
+    "width": 1079,
+    "height": 1120,
+    "restored": null,
+    "variants": [
+      {
+        "src": "assets/clients/impacto-solucoes-graficas-480.webp",
+        "width": 462,
+        "height": 480,
+        "bytes": 21792
+      },
+      {
+        "src": "assets/clients/impacto-solucoes-graficas-960.webp",
+        "width": 925,
+        "height": 960,
+        "bytes": 50958
+      }
+    ]
+  },
+  {
+    "slug": "ll-solucao-grafica",
+    "name": "LL Solução Gráfica",
+    "original": "assets/clients/originals/ll-solucao-grafica.jpg",
+    "width": 2109,
+    "height": 745,
+    "restored": "assets/clients/restored/ll-solucao-grafica.png",
+    "variants": [
+      {
+        "src": "assets/clients/ll-solucao-grafica-480.webp",
+        "width": 480,
+        "height": 170,
+        "bytes": 11794
+      },
+      {
+        "src": "assets/clients/ll-solucao-grafica-960.webp",
+        "width": 960,
+        "height": 339,
+        "bytes": 28920
+      }
+    ]
+  },
+  {
+    "slug": "catavento",
+    "name": "Catavento",
+    "original": "assets/clients/originals/catavento.jpg",
+    "width": 812,
+    "height": 640,
+    "restored": null,
+    "variants": [
+      {
+        "src": "assets/clients/catavento-480.webp",
+        "width": 480,
+        "height": 378,
+        "bytes": 20110
+      },
+      {
+        "src": "assets/clients/catavento-960.webp",
+        "width": 812,
+        "height": 640,
+        "bytes": 35652
+      }
+    ]
+  },
+  {
+    "slug": "rubel-materiais-eletricos",
+    "name": "Rubel Materiais Elétricos",
+    "original": "assets/clients/originals/rubel-materiais-eletricos.jpg",
+    "width": 688,
+    "height": 736,
+    "restored": null,
+    "variants": [
+      {
+        "src": "assets/clients/rubel-materiais-eletricos-480.webp",
+        "width": 449,
+        "height": 480,
+        "bytes": 22560
+      },
+      {
+        "src": "assets/clients/rubel-materiais-eletricos-960.webp",
+        "width": 688,
+        "height": 736,
+        "bytes": 35542
+      }
+    ]
+  },
+  {
+    "slug": "rassul",
+    "name": "Rassul Móveis Planejados",
+    "original": "assets/clients/originals/rassul.jpg",
+    "width": 2167,
+    "height": 726,
+    "restored": "assets/clients/restored/rassul.png",
+    "variants": [
+      {
+        "src": "assets/clients/rassul-480.webp",
+        "width": 480,
+        "height": 161,
+        "bytes": 10374
+      },
+      {
+        "src": "assets/clients/rassul-960.webp",
+        "width": 960,
+        "height": 322,
+        "bytes": 19660
+      }
+    ]
+  },
+  {
+    "slug": "guarutech",
+    "name": "Guarutech",
+    "original": "assets/clients/originals/guarutech.jpg",
+    "width": 2168,
+    "height": 725,
+    "restored": "assets/clients/restored/guarutech.png",
+    "variants": [
+      {
+        "src": "assets/clients/guarutech-480.webp",
+        "width": 480,
+        "height": 161,
+        "bytes": 10536
+      },
+      {
+        "src": "assets/clients/guarutech-960.webp",
+        "width": 960,
+        "height": 321,
+        "bytes": 23848
+      }
+    ]
+  },
+  {
+    "slug": "ferrugem-original",
+    "name": "Ferrugem Original",
+    "original": "assets/clients/originals/ferrugem-original.jpg",
+    "width": 818,
+    "height": 619,
+    "restored": null,
+    "variants": [
+      {
+        "src": "assets/clients/ferrugem-original-480.webp",
+        "width": 480,
+        "height": 363,
+        "bytes": 20482
+      },
+      {
+        "src": "assets/clients/ferrugem-original-960.webp",
+        "width": 818,
+        "height": 619,
+        "bytes": 36414
+      }
+    ]
+  },
+  {
+    "slug": "cantinho-do-nordeste",
+    "name": "Cantinho do Nordeste",
+    "original": "assets/clients/originals/cantinho-do-nordeste.jpg",
+    "width": 1402,
+    "height": 1122,
+    "restored": null,
+    "variants": [
+      {
+        "src": "assets/clients/cantinho-do-nordeste-480.webp",
+        "width": 480,
+        "height": 384,
+        "bytes": 35120
+      },
+      {
+        "src": "assets/clients/cantinho-do-nordeste-960.webp",
+        "width": 960,
+        "height": 768,
+        "bytes": 93986
+      }
+    ]
+  },
+  {
+    "slug": "trilhofer",
+    "name": "Trilhofer",
+    "original": "assets/clients/originals/trilhofer.jpg",
+    "width": 1685,
+    "height": 933,
+    "restored": "assets/clients/restored/trilhofer.png",
+    "variants": [
+      {
+        "src": "assets/clients/trilhofer-480.webp",
+        "width": 480,
+        "height": 266,
+        "bytes": 21728
+      },
+      {
+        "src": "assets/clients/trilhofer-960.webp",
+        "width": 960,
+        "height": 532,
+        "bytes": 57248
+      }
+    ]
+  },
+  {
+    "slug": "haziel",
+    "name": "Haziel",
+    "original": "assets/clients/originals/haziel.jpg",
+    "width": 813,
+    "height": 430,
+    "restored": null,
+    "variants": [
+      {
+        "src": "assets/clients/haziel-480.webp",
+        "width": 480,
+        "height": 254,
+        "bytes": 7306
+      },
+      {
+        "src": "assets/clients/haziel-960.webp",
+        "width": 813,
+        "height": 430,
+        "bytes": 12932
+      }
+    ]
+  },
+  {
+    "slug": "bahia-construcoes",
+    "name": "Bahia Construções",
+    "original": "assets/clients/originals/bahia-construcoes.jpg",
+    "width": 774,
+    "height": 292,
+    "restored": null,
+    "variants": [
+      {
+        "src": "assets/clients/bahia-construcoes-480.webp",
+        "width": 480,
+        "height": 181,
+        "bytes": 6182
+      },
+      {
+        "src": "assets/clients/bahia-construcoes-960.webp",
+        "width": 774,
+        "height": 292,
+        "bytes": 10228
+      }
+    ]
+  },
+  {
+    "slug": "central-auto-vidros",
+    "name": "Central Auto Vidros",
+    "original": "assets/clients/originals/central-auto-vidros.jpg",
+    "width": 1254,
+    "height": 1254,
+    "restored": "assets/clients/restored/central-auto-vidros.png",
+    "variants": [
+      {
+        "src": "assets/clients/central-auto-vidros-480.webp",
+        "width": 480,
+        "height": 480,
+        "bytes": 26020
+      },
+      {
+        "src": "assets/clients/central-auto-vidros-960.webp",
+        "width": 960,
+        "height": 960,
+        "bytes": 56616
+      }
+    ]
+  },
+  {
+    "slug": "resolveit",
+    "name": "ResolveIT",
+    "original": "assets/resolveit.jpeg",
+    "url": "https://www.resolveit.com.br/",
+    "restored": null,
+    "width": 300,
+    "height": 200,
+    "variants": [
+      {
+        "src": "assets/clients/resolveit-480.webp",
+        "width": 300,
+        "height": 200,
+        "bytes": 5536
+      }
+    ]
+  },
+  {
+    "slug": "focopromocional",
+    "name": "Foco Promocional",
+    "original": "assets/focopromocional.jpeg",
+    "url": "https://focopromocional.com.br/",
+    "restored": null,
+    "width": 300,
+    "height": 200,
+    "variants": [
+      {
+        "src": "assets/clients/focopromocional-480.webp",
+        "width": 300,
+        "height": 200,
+        "bytes": 8014
+      }
+    ]
+  },
+  {
+    "slug": "valems",
+    "name": "Vale M.S",
+    "original": "assets/valems.jpeg",
+    "url": "https://valems.com.br/",
+    "restored": null,
+    "width": 300,
+    "height": 200,
+    "variants": [
+      {
+        "src": "assets/clients/valems-480.webp",
+        "width": 300,
+        "height": 200,
+        "bytes": 14172
+      }
+    ]
+  },
+  {
+    "slug": "alfapavimentacao",
+    "name": "Alfa Pavimentação",
+    "original": "assets/alfapavimentacao.jpeg",
+    "url": "https://alfapavimentacao.com.br/",
+    "restored": null,
+    "width": 300,
+    "height": 200,
+    "variants": [
+      {
+        "src": "assets/clients/alfapavimentacao-480.webp",
+        "width": 300,
+        "height": 200,
+        "bytes": 8904
+      }
+    ]
+  },
+  {
+    "slug": "reatecreatores",
+    "name": "Reatec",
+    "original": "assets/reatecreatores.jpeg",
+    "url": "https://www.reatecreatores.com.br/",
+    "restored": null,
+    "width": 300,
+    "height": 200,
+    "variants": [
+      {
+        "src": "assets/clients/reatecreatores-480.webp",
+        "width": 300,
+        "height": 200,
+        "bytes": 6916
+      }
+    ]
+  },
+  {
+    "slug": "vigatec",
+    "name": "Vigatec",
+    "original": "assets/vigatec.jpeg",
+    "url": "https://vigatec.com.br/",
+    "restored": null,
+    "width": 300,
+    "height": 200,
+    "variants": [
+      {
+        "src": "assets/clients/vigatec-480.webp",
+        "width": 300,
+        "height": 200,
+        "bytes": 13828
+      }
+    ]
+  },
+  {
+    "slug": "fullstock",
+    "name": "Fullstock",
+    "original": "assets/fullstock.jpeg",
+    "url": "",
+    "restored": null,
+    "width": 300,
+    "height": 200,
+    "variants": [
+      {
+        "src": "assets/clients/fullstock-480.webp",
+        "width": 300,
+        "height": 200,
+        "bytes": 9352
+      }
+    ]
+  },
+  {
+    "slug": "olicleanlimpeza",
+    "name": "Oli Clean",
+    "original": "assets/olicleanlimpeza.jpeg",
+    "url": "https://olicleanlimpeza.com.br/",
+    "restored": null,
+    "width": 300,
+    "height": 200,
+    "variants": [
+      {
+        "src": "assets/clients/olicleanlimpeza-480.webp",
+        "width": 300,
+        "height": 200,
+        "bytes": 16484
+      }
+    ]
+  },
+  {
+    "slug": "refeicoestorres",
+    "name": "Refeições Torres",
+    "original": "assets/refeicoestorres.jpeg",
+    "url": "",
+    "restored": null,
+    "width": 300,
+    "height": 200,
+    "variants": [
+      {
+        "src": "assets/clients/refeicoestorres-480.webp",
+        "width": 300,
+        "height": 200,
+        "bytes": 11444
+      }
+    ]
+  },
+  {
+    "slug": "msaraujo",
+    "name": "MS Araujo",
+    "original": "assets/msaraujo.jpeg",
+    "url": "",
+    "restored": null,
+    "width": 300,
+    "height": 200,
+    "variants": [
+      {
+        "src": "assets/clients/msaraujo-480.webp",
+        "width": 300,
+        "height": 200,
+        "bytes": 14060
+      }
+    ]
+  }
+]

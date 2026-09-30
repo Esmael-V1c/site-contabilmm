@@ -1,0 +1,49 @@
+name: Qualidade
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qualidade-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: JavaScript, testes e HTML
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Obter código
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Preparar Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Preparar Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Validar sintaxe
+        run: npm run check
+      - name: Executar testes
+        run: npm test
+      - name: Validar páginas e recursos
+        run: python scripts/validate.py
+      - name: Conferir metadados gerados
+        shell: bash
+        run: |
+          npm run seo
+          git diff --exit-code -- '*.html' robots.txt sitemap.xml
+          if [[ -n "$(git ls-files --others --exclude-standard -- sitemap.xml)" ]]; then
+            echo 'sitemap.xml foi gerado, mas ainda não está versionado.'
+            exit 1
+          fi

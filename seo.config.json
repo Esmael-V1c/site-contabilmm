@@ -1,0 +1,28 @@
+{
+  "siteUrl": "",
+  "plannedSiteUrl": "https://assessoriacontabilmm.com",
+  "searchConsoleVerification": "",
+  "siteName": "Contabil MM",
+  "pages": {
+    "index.html": {
+      "title": "Contabilidade em Guarulhos | Contabil MM desde 1981",
+      "description": "Assessoria contábil em Guarulhos desde 1981. Conheça a Contabil MM, em Vila Galvão, e converse sobre abertura de empresa, troca de contador e serviços contábeis."
+    },
+    "servicos.html": {
+      "title": "Serviços contábeis em Guarulhos | Contabil MM",
+      "description": "Conheça os serviços contábeis da Contabil MM em Guarulhos. Assessoria para abrir sua empresa, trocar de contador e cuidar das necessidades do seu negócio."
+    },
+    "sobre.html": {
+      "title": "Sobre a Contabil MM | Assessoria em Guarulhos desde 1981",
+      "description": "Conheça a história e a equipe da Contabil MM, assessoria contábil de Guarulhos desde 1981, localizada em Vila Galvão e dedicada ao atendimento das empresas."
+    },
+    "contato.html": {
+      "title": "Contato com a Contabil MM | Contabilidade em Vila Galvão",
+      "description": "Fale com a Contabil MM pelo WhatsApp ou e-mail. Atendimento presencial e remoto das 8h30 às 17h30. Rua Treze de Maio, 582, Vila Galvão, Guarulhos."
+    },
+    "privacidade.html": {
+      "title": "Privacidade e cookies | Contabil MM",
+      "description": "Saiba como a Contabil MM utiliza dados de contato, cookies e ferramentas de medição no site, e conheça as opções para gerenciar suas preferências."
+    }
+  }
+}

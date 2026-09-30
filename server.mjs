@@ -5,13 +5,13 @@ import { fileURLToPath } from 'node:url';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const port = Number(process.env.PORT || 4173);
-const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.ico': 'image/x-icon' };
+const types = { '.html': 'text/html; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.ico': 'image/x-icon' };
 createServer(async (req, res) => {
   try {
     const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
     const file = resolve(root, '.' + (pathname === '/' ? '/index.html' : pathname));
     const relative = file.slice(root.length + 1);
-    if (!file.startsWith(root + sep) || relative.split(sep).some(part => part.startsWith('.')) || !['.html', '.css', '.js', '.json', '.png', '.jpg', '.jpeg', '.webp', '.svg', '.woff2', '.ico'].includes(extname(file))) {
+    if (!file.startsWith(root + sep) || relative.split(sep).some(part => part.startsWith('.')) || !['.html', '.xml', '.txt', '.css', '.js', '.json', '.png', '.jpg', '.jpeg', '.webp', '.svg', '.woff2', '.ico'].includes(extname(file))) {
       res.writeHead(403); res.end('Acesso negado'); return;
     }
     const info = await stat(file);

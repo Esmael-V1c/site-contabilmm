@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "ll-solucao-grafica",
+    "prompt": "Restauração fiel do logo fornecido: preservar composição, nome, símbolos e cores; melhorar nitidez e reduzir artefatos, sem redesenho.",
+    "source": "image_gen built-in",
+    "file": "assets/clients/restored/ll-solucao-grafica.png"
+  },
+  {
+    "slug": "rassul",
+    "prompt": "Restauração fiel do logo fornecido: preservar composição, nome, símbolos e cores; melhorar nitidez e reduzir artefatos, sem redesenho.",
+    "source": "image_gen built-in",
+    "file": "assets/clients/restored/rassul.png"
+  },
+  {
+    "slug": "guarutech",
+    "prompt": "Restauração fiel do logo fornecido: preservar composição, nome, símbolos e cores; melhorar nitidez e reduzir artefatos, sem redesenho.",
+    "source": "image_gen built-in",
+    "file": "assets/clients/restored/guarutech.png"
+  },
+  {
+    "slug": "trilhofer",
+    "prompt": "Restauração fiel do logo fornecido: preservar composição, nome, símbolos e cores; melhorar nitidez e reduzir artefatos, sem redesenho.",
+    "source": "image_gen built-in",
+    "file": "assets/clients/restored/trilhofer.png"
+  },
+  {
+    "slug": "central-auto-vidros",
+    "prompt": "Restauração fiel do logo fornecido: preservar composição, nome, símbolos e cores; melhorar nitidez e reduzir artefatos, sem redesenho.",
+    "source": "image_gen built-in",
+    "file": "assets/clients/restored/central-auto-vidros.png"
+  }
+]

@@ -1,65 +1,126 @@
-# Contabil MM — versão local
+<div align="center">
+  <img src="docs/assets/repository-banner.png" alt="Site ContabilMM — presença digital para uma contabilidade próxima" width="100%">
 
-Reprodução visual de https://www.contabilmm.com/, realizada em 25/09/2026. Projeto em HTML, CSS e JavaScript, sem instalação de dependências.
+  <h1>Site ContabilMM</h1>
+  <p><strong>Uma presença digital clara, acessível e feita para aproximar pessoas.</strong></p>
+  <p>Site institucional da Assessoria Contábil MM, em Guarulhos · Vila Galvão.</p>
 
-## Como abrir
+  <p>
+    <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&amp;logo=html5&amp;logoColor=white">
+    <img alt="CSS3" src="https://img.shields.io/badge/CSS3-225189?style=flat-square&amp;logo=css&amp;logoColor=white">
+    <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-EBB347?style=flat-square&amp;logo=javascript&amp;logoColor=163559">
+    <img alt="Node.js 24" src="https://img.shields.io/badge/Node.js-24-417E38?style=flat-square&amp;logo=nodedotjs&amp;logoColor=white">
+    <img alt="Sem dependências de aplicação" src="https://img.shields.io/badge/dependências-0-163559?style=flat-square">
+  </p>
 
-Abra `index.html` no navegador, ou execute na pasta do projeto:
+  <p>
+    <a href="#comece-aqui">Comece aqui</a> ·
+    <a href="#o-que-o-site-entrega">Recursos</a> ·
+    <a href="docs/README.md">Documentação</a> ·
+    <a href="CONTRIBUTING.md">Contribuir</a>
+  </p>
+</div>
+
+---
+
+## Sobre o projeto
+
+Cinco páginas institucionais construídas com HTML, CSS e JavaScript, com imagens e fontes locais, navegação responsiva e contato pelo WhatsApp. O projeto partiu de uma reprodução visual de [contabilmm.com](https://www.contabilmm.com/), realizada em 25/09/2026, e recebeu ajustes de conteúdo, acessibilidade, SEO e interação.
+
+**Sem etapa de build para navegar.** O Node.js executa o servidor de desenvolvimento, o gerador de SEO e os testes. Python é usado na validação dos arquivos HTML.
+
+> **Estado atual:** execução local pronta. A ativação do domínio de produção e das medições Google depende de configuração. O envio do código ao GitHub não publica o site na internet.
+
+## Prévia
+
+![Página inicial do Site ContabilMM em uma tela de desktop](docs/assets/site-preview.png)
+
+<sub>Captura local da página inicial em 30/09/2026. O conteúdo se adapta a telas menores.</sub>
+
+## O que o site entrega
+
+| Recurso | Como funciona |
+| --- | --- |
+| **Cinco páginas** | Início, serviços, sobre, contato e privacidade. |
+| **Contato pelo WhatsApp** | Prepara uma mensagem com os dados do formulário; o visitante revisa e confirma o envio no WhatsApp. |
+| **Vitrine de clientes** | 24 marcas, imagens responsivas, navegação por teclado e opção de exibição em grade. |
+| **Depoimentos** | Carrossel navegável por toque e teclado, com fonte e data da avaliação geral documentadas. |
+| **Acessibilidade** | Menu por teclado, foco visível e respeito à preferência de movimento reduzido. |
+| **SEO estático** | Títulos, descrições e JSON-LD; canonical e sitemap condicionados ao domínio definitivo. |
+| **Medição opcional** | Google Ads e GA4 preparados para configuração explícita e consentimento. |
+
+## Comece aqui
+
+Use **Node.js 24**. Não é necessário executar `npm install`: o projeto não possui dependências npm.
+
+Depois de obter o repositório, abra um terminal na pasta do projeto:
 
 ```sh
 npm start
 ```
 
-Depois acesse http://127.0.0.1:4173. Para parar o servidor, pressione Ctrl+C no terminal.
+Acesse **http://127.0.0.1:4173**. Para encerrar, pressione `Ctrl+C`.
 
-## Arquivos
+Também é possível abrir `index.html` diretamente; o servidor local é preferível para verificar o comportamento em HTTP. Mapas incorporados e destinos externos precisam de internet.
 
-- `index.html`: página inicial com apresentação, serviços, clientes, depoimentos e formulário.
-- `servicos.html`: serviços contábeis.
-- `sobre.html`: história e equipe.
-- `contato.html`: formulário de contato.
-- `style.css`: ajustes visuais e adaptação para celular.
-- `assets/reference.css`: estilos da referência, incluindo fontes locais.
-- `script.js`: menu responsivo, preferência de cookies e validação/envio do formulário.
-- `config.js`: configuração do endereço de envio.
-- `assets/`: imagens, logotipos e fontes; `sources.json` registra suas URLs de origem.
-- `server.mjs`: servidor local opcional, limitado a 127.0.0.1.
+## Comandos
 
-## Formulário
+| Comando | Finalidade |
+| --- | --- |
+| `npm start` | Abre o servidor local na porta 4173. |
+| `npm run check` | Confere a sintaxe dos arquivos JavaScript. |
+| `npm test` | Executa os testes de clientes, formulários, medição e SEO. |
+| `npm run seo` | Atualiza metadados, robots.txt e, quando configurado, sitemap.xml. |
+| `python scripts/validate.py` | Valida recursos, links, âncoras e metadados das cinco páginas. Requer Python 3. |
 
-Para ativar o envio real, preencha `contactEndpoint` em `config.js` com seu próprio endpoint. Ele deverá aceitar POST com JSON contendo `nome`, `email`, `empresa`, `cargo`, `telefone` e `mensagem`, e responder com HTTP 2xx quando a mensagem for recebida. Se estiver em outro domínio, configure CORS no serviço.
+O workflow [Qualidade](.github/workflows/ci.yml) executa as verificações em pushes e pull requests. Ele também verifica se os metadados gerados estão sincronizados com a configuração.
 
-Sem essa configuração, os campos são validados e uma janela informa que nenhum dado foi enviado, com acesso ao formulário oficial. Não há uma confirmação falsa de envio e não se utiliza a integração privada do site original. O serviço de recebimento deve aplicar sua própria validação e proteção contra spam.
+## Estrutura
 
-Os atalhos de WhatsApp usam o número fornecido da assessoria: (11) 99100-1754. Os links de e-mail do rodapé e da seção de atendimento abrem a tela de nova mensagem do Gmail em outra aba com o destinatário contabilmm@yahoo.com.br, informado pela assessoria. Isso não configura o envio do formulário.
-
-A página de contato apresenta informações de atendimento abaixo da seção de WhatsApp: horário presencial e remoto das 8h30 às 17h30, endereço na Rua Treze de Maio, 582, com link para o Google Maps, e e-mail.
-
-O rodapé inclui endereço com link para o perfil da Contabil MM no Google Maps, aberto em nova aba, e ícones de WhatsApp, Instagram e e-mail com cores de destaque. A localização usa o mesmo perfil verificado na seção de depoimentos.
-
-## Recursos e limites
-
-As quatro páginas, imagens e fontes estão salvas localmente. Os mapas incorporados usam OpenStreetMap e precisam de internet; links externos também. Nenhum rastreador do site original foi importado. A escolha no aviso de cookies é guardada apenas no navegador.
-
-O HTML foi corrigido para evitar links aninhados presentes na referência. O menu funciona por toque e teclado, e as animações da referência não impedem a leitura do conteúdo. Os textos e materiais de marca foram mantidos para atender à fidelidade solicitada.
-
-## Animação das seções
-
-Imagens e textos entram com um fade de 750 ms quando aparecem na tela pela primeira vez. O `IntersectionObserver` deixa de observar cada elemento após a entrada, de modo que voltar à seção não repete o efeito. O estado existe apenas na página atual e reinicia ao recarregar. Cards de avaliação são animados como um único bloco. Elementos focados pelo teclado ficam visíveis imediatamente; a preferência de movimento reduzido é respeitada. Sem JavaScript, o conteúdo permanece visível.
-
-## Depoimentos
-
-A seção usa dez cards de texto, com resumos fiéis às avaliações antes exibidas nas imagens `assets/avaliacao_1.jpeg` a `assets/avaliacao_10.jpeg`. Os arquivos originais foram preservados como referência; as fotos não aparecem no carrossel. As notas individuais são de 5 estrelas, conforme essas avaliações.
-
-A nota geral de **5,0 em 191 avaliações** foi consultada no [perfil da Assessoria Contábil MM no Google Maps](https://www.google.com/maps/?cid=4580796176665174713) em **25/09/2026**. É uma informação estática com data de consulta, sem atualização automática. Para atualizá-la, edite o bloco `reviews-summary` em `index.html` após verificar novamente a fonte.
-
-As setas percorrem um card por vez; o celular também permite arrastar. O carrossel aceita as teclas ←, →, Home e End quando está em foco, respeita a preferência de movimento reduzido e desativa as setas nos limites.
-
-## Verificação
-
-```sh
-npm run check
-python scripts/validate.py
+```text
+site-contabilmm/
+├── .github/              # Automação e modelos de issues / pull requests
+├── assets/               # Imagens, fontes e registros de origem
+│   └── clients/          # Logos originais, restaurações e variantes WebP
+├── docs/                 # Guias de manutenção, SEO e medição
+│   └── assets/           # Identidade visual do repositório
+├── scripts/              # Geração de SEO e validação
+├── tests/                # Testes com o runner nativo do Node.js
+├── index.html            # Página inicial
+├── servicos.html         # Serviços contábeis
+├── sobre.html            # História e equipe
+├── contato.html          # Formulário e atendimento
+├── privacidade.html      # Privacidade e preferências de cookies
+├── style.css             # Layout e adaptação para diferentes telas
+├── script.js             # Navegação, animações e formulários
+├── clients.js            # Vitrine de clientes
+├── measurement.js        # Consentimento e eventos de medição
+├── config.js             # Contato e integração opcional de medição
+├── seo.config.json       # Metadados e domínio
+└── server.mjs            # Servidor de desenvolvimento
 ```
 
-O segundo comando exige Python 3 (somente biblioteca padrão). Ele verifica arquivos referenciados, links locais e estrutura básica. `scripts/import_reference.py` registra a rotina de importação; ela usa a cache em `.reference/` e sobrescreve as páginas geradas, portanto preserve suas edições antes de utilizá-la. A pasta `.reference/` não é necessária para executar o site.
+## Configuração
+
+- **Contato:** edite `config.js`. O modo atual abre o WhatsApp; um endpoint próprio é opcional.
+- **SEO e domínio:** edite `seo.config.json` e execute `npm run seo`. `siteUrl` permanece vazio até a definição do domínio de produção.
+- **Medição:** informe os IDs e os hosts permitidos em `config.js`, seguindo o [guia de medição](docs/MEDICAO.md).
+- **Conteúdo e visual:** edite as páginas HTML, `style.css` e os recursos em `assets/`.
+
+Os arquivos do frontend são públicos quando o site é hospedado. Credenciais privadas não devem ser incluídas em `config.js` nem no código enviado ao navegador.
+
+## Documentação
+
+| Guia | Conteúdo |
+| --- | --- |
+| [Índice da documentação](docs/README.md) | Caminhos para começar e manter o projeto. |
+| [Guia técnico](docs/GUIA-TECNICO.md) | Formulários, animações, avaliações, clientes e detalhes operacionais. |
+| [SEO e divulgação](docs/SEO-E-DIVULGACAO.md) | Domínio, metadados e preparação para lançamento. |
+| [Medição](docs/MEDICAO.md) | Consentimento, eventos e configuração de Ads / GA4. |
+| [Contribuição](CONTRIBUTING.md) | Fluxo de alterações e verificação antes do envio. |
+
+## Autoria e materiais
+
+Projeto mantido por **Esmael-V1c** para o Site ContabilMM. As origens dos recursos estão registradas em [`assets/sources.json`](assets/sources.json) e [`assets/clients/sources.json`](assets/clients/sources.json). Marcas, fotografias, fontes e materiais de terceiros mantêm seus respectivos direitos; este repositório não acrescenta uma licença de redistribuição para esses materiais.
+
+A apresentação do repositório se inspira na navegação do [Best-README-Template](https://github.com/othneildrew/Best-README-Template) e na organização de documentação do [Astro](https://github.com/withastro/astro), com texto e identidade visual próprios.

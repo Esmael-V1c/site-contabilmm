@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="title description">
+  <title id="title">Site ContabilMM</title>
+  <desc id="description">Capa azul e dourada do projeto. Presença digital para uma contabilidade próxima. HTML, CSS e JavaScript.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10283f"/><stop offset="1" stop-color="#225189"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+  </defs>
+  <rect width="1280" height="400" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="400" rx="24" fill="url(#grid)"/>
+  <circle cx="1170" cy="90" r="230" fill="none" stroke="#ebb347" stroke-opacity=".16"/>
+  <circle cx="1170" cy="90" r="170" fill="none" stroke="#ebb347" stroke-opacity=".12"/>
+  <path d="M72 77H128" stroke="#ebb347" stroke-width="5" stroke-linecap="round"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="72" y="123" fill="#b7cbe0" font-size="16" letter-spacing="4">ASSESSORIA CONTÁBIL MM</text>
+    <text x="68" y="204" fill="#fff" font-size="68" font-weight="700">Site Contabil<tspan fill="#ebb347">MM</tspan></text>
+    <text x="72" y="249" fill="#d7e3ef" font-size="24">Presença digital para uma contabilidade próxima.</text>
+    <text x="72" y="328" fill="#b7cbe0" font-size="15" letter-spacing="2">HTML · CSS · JAVASCRIPT</text>
+    <rect x="908" y="119" width="264" height="176" rx="20" fill="#10283f" fill-opacity=".65" stroke="#7696b7" stroke-opacity=".35"/>
+    <path d="M931 153H1149" stroke="#7696b7" stroke-opacity=".3"/>
+    <circle cx="933" cy="137" r="3" fill="#ebb347"/><circle cx="946" cy="137" r="3" fill="#7696b7"/><circle cx="959" cy="137" r="3" fill="#7696b7"/>
+    <text x="941" y="231" fill="#fff" font-size="56" font-weight="700">M<tspan fill="#ebb347">M</tspan><tspan font-size="34" fill="#7696b7"> /&gt;</tspan></text>
+    <text x="940" y="267" fill="#b7cbe0" font-size="13" letter-spacing="2">CLAREZA. CONFIANÇA.</text>
+  </g>
+  <path d="M72 374H1208" stroke="#ebb347" stroke-opacity=".35"/>
+</svg>
