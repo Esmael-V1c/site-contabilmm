@@ -15,6 +15,7 @@
 
   <p>
     <a href="#comece-aqui">Comece aqui</a> ·
+    <a href="https://esmael-v1c.github.io/site-contabilmm/">Abrir site</a> ·
     <a href="#o-que-o-site-entrega">Recursos</a> ·
     <a href="docs/README.md">Documentação</a> ·
     <a href="CONTRIBUTING.md">Contribuir</a>
@@ -29,7 +30,7 @@ Cinco páginas institucionais construídas com HTML, CSS e JavaScript, com image
 
 **Sem etapa de build para navegar.** O Node.js executa o servidor de desenvolvimento, o gerador de SEO e os testes. Python é usado na validação dos arquivos HTML.
 
-> **Estado atual:** execução local pronta. A ativação do domínio de produção e das medições Google depende de configuração. O envio do código ao GitHub não publica o site na internet.
+> **Acesso online:** [abrir o site no GitHub Pages](https://esmael-v1c.github.io/site-contabilmm/). Alterações enviadas à branch `main` são publicadas automaticamente após as validações. O domínio próprio e as medições Google continuam dependendo de configuração.
 
 ## Prévia
 
@@ -71,6 +72,7 @@ Também é possível abrir `index.html` diretamente; o servidor local é prefer�
 | `npm run check` | Confere a sintaxe dos arquivos JavaScript. |
 | `npm test` | Executa os testes de clientes, formulários, medição e SEO. |
 | `npm run seo` | Atualiza metadados, robots.txt e, quando configurado, sitemap.xml. |
+| `npm run build:pages` | Prepara o pacote estático de publicação em `_site/`. |
 | `python scripts/validate.py` | Valida recursos, links, âncoras e metadados das cinco páginas. Requer Python 3. |
 
 O workflow [Qualidade](.github/workflows/ci.yml) executa as verificações em pushes e pull requests. Ele também verifica se os metadados gerados estão sincronizados com a configuração.
@@ -117,6 +119,7 @@ Os arquivos do frontend são públicos quando o site é hospedado. Credenciais p
 | [Guia técnico](docs/GUIA-TECNICO.md) | Formulários, animações, avaliações, clientes e detalhes operacionais. |
 | [SEO e divulgação](docs/SEO-E-DIVULGACAO.md) | Domínio, metadados e preparação para lançamento. |
 | [Medição](docs/MEDICAO.md) | Consentimento, eventos e configuração de Ads / GA4. |
+| [GitHub Pages](docs/GITHUB-PAGES.md) | Acesso online e publicação automática. |
 | [Contribuição](CONTRIBUTING.md) | Fluxo de alterações e verificação antes do envio. |
 
 ## Autoria e materiais

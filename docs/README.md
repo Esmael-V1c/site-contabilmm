@@ -6,6 +6,7 @@ O [README principal](../README.md) apresenta o site e o início rápido.
 | --- | --- |
 | Entender formulários, carrosséis e arquivos | [Guia técnico](GUIA-TECNICO.md) |
 | Preparar domínio, SEO e divulgação | [SEO e divulgação](SEO-E-DIVULGACAO.md) |
+| Publicar uma versão acessível pela internet | [GitHub Pages](GITHUB-PAGES.md) |
 | Configurar Google Ads, GA4 e consentimento | [Medição](MEDICAO.md) |
 | Alterar o código e validar a entrega | [Contribuição](../CONTRIBUTING.md) |
 

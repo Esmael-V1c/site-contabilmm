@@ -1,6 +1,6 @@
 # Contribuindo com o Site ContabilMM
 
-Este guia é destinado aos colaboradores com acesso ao repositório privado.
+Este guia é destinado aos colaboradores do projeto. O repositório é público; contribuições podem ser propostas por pull request.
 
 ## Preparação
 
