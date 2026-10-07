@@ -221,7 +221,7 @@ test("se a abertura automática não ocorrer, mantém link acionável e dados pa
 test("páginas mantêm os seis campos esperados e desativam submissão nativa sem JavaScript", () => {
   for (const file of ["index.html", "contato.html"]) {
     const html = readFileSync(path.join(__dirname, "..", file), "utf8");
-    const form = html.match(/<form\b[^>]*data-contact-form[^>]*>([\s\S]*?)<\/form>/)[1];
+    const form = html.match(/<form\b[^>]*data-contact-form[^>]*>([\s\S]*?)<\/form>/)[1].replace(/\s+/g, " ");
     for (const name of ["nome", "email", "empresa", "cargo", "telefone", "mensagem"]) assert.ok(form.includes('name="' + name + '"'));
     assert.match(form, /<button type="submit" disabled/);
     assert.match(form, /Continuar no WhatsApp/);

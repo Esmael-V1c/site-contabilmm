@@ -43,7 +43,7 @@ Referência: [clique para conversa do WhatsApp](https://faq.whatsapp.com/5913398
 
 Os atalhos de WhatsApp usam o número fornecido da assessoria: (11) 99100-1754. Os links de e-mail do rodapé e da seção de atendimento abrem a tela de nova mensagem do Gmail em outra aba com o destinatário contabilmm@yahoo.com.br, informado pela assessoria. Isso não configura o envio do formulário.
 
-A página de contato apresenta informações de atendimento abaixo da seção de WhatsApp: horário presencial e remoto das 8h30 às 17h30, endereço na Rua Treze de Maio, 582, com link para o Google Maps, e e-mail.
+A página de contato apresenta informações de atendimento abaixo da seção de WhatsApp: horário presencial e remoto das 8h00 às 17h30, endereço na Rua Treze de Maio, 582, com link para o Google Maps, e e-mail.
 
 O rodapé inclui endereço com link para o perfil da Contabil MM no Google Maps, aberto em nova aba, e ícones de WhatsApp, Instagram e e-mail com cores de destaque. A localização usa o mesmo perfil verificado na seção de depoimentos.
 
@@ -85,6 +85,8 @@ O gerador já prepara metadados de Guarulhos e dados estruturados do escritório
 ## Vitrine de empresas
 
 A seção `#empresas` da página inicial reúne 24 logos (10 existentes e 14 enviados) em uma única lista HTML, sem duplicar o conteúdo entre celular e desktop. O título e os indicadores de clientes foram atualizados para +400 conforme informado pela assessoria.
+
+A página `sobre.html` também exibe as mesmas 24 empresas, imediatamente acima de `assets/start_about_us_page.png`. A variante `.clients-showcase--compact` acompanha a largura da imagem, com título em escala menor, logos de 100–112 px de altura e espaçamentos reduzidos. Ela compartilha `clients.js`, incluindo movimento contínuo, pausa por interação, setas e visualização em grade. Ao atualizar a lista de empresas, mantenha os cards das duas páginas sincronizados; os arquivos de imagem são compartilhados.
 
 O layout parte do celular, com arraste horizontal nativo e parte do próximo card visível. Em telas maiores, aumenta o número de cards. `clients.js` acrescenta setas, navegação por teclado, indicador da posição, pausa/retomada e botão para exibir toda a lista em grade. Sem JavaScript, as empresas continuam acessíveis por rolagem.
 

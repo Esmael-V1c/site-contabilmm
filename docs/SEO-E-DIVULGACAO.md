@@ -4,7 +4,7 @@
 
 O site está preparado para a assessoria de Guarulhos, com conteúdo local, títulos e descrições exclusivos, hierarquia de títulos, links por serviço e dados estruturados AccountingService. O domínio **previsto** é `https://assessoriacontabilmm.com`, mas permanece inativo em `seo.config.json`: `plannedSiteUrl` é só referência; `siteUrl` está vazio por solicitação do usuário. Nenhum domínio foi comprado ou configurado, nenhum site foi publicado e nenhuma campanha foi alterada.
 
-`robots.txt` permite a leitura das páginas e dos recursos visuais e exclui rotas auxiliares. Isso orienta robôs, mas não protege arquivos confidenciais. Não publique segredos nem a pasta `.git`. Os dados estruturados não incluem avaliação própria nem horários semanais: ainda faltam os dias de atendimento confirmados. A faixa de 8h30 às 17h30 continua visível na página Contato.
+`robots.txt` permite a leitura das páginas e dos recursos visuais e exclui rotas auxiliares. Isso orienta robôs, mas não protege arquivos confidenciais. Não publique segredos nem a pasta `.git`. Os dados estruturados não incluem avaliação própria nem horários semanais: ainda faltam os dias de atendimento confirmados. A faixa de 8h00 às 17h30 continua visível na página Contato.
 
 Os metadados são HTML estático; não dependem de JavaScript para serem lidos. O CSS da referência passou a ser solicitado diretamente no HTML, removendo a dependência de um `@import` em série. A apresentação inicial é imediatamente visível, enquanto as demais seções mantêm seu fade. Não foi realizada medição de desempenho em um domínio público.
 
