@@ -30,7 +30,7 @@ Cinco páginas institucionais construídas com HTML, CSS e JavaScript, com image
 
 **Sem etapa de build para navegar.** O Node.js executa o servidor de desenvolvimento, o gerador de SEO e os testes. Python é usado na validação dos arquivos HTML.
 
-> **Acesso online:** [abrir o site no GitHub Pages](https://esmael-v1c.github.io/site-contabilmm/). Alterações enviadas à branch `main` são publicadas automaticamente após as validações. O domínio próprio e as medições Google continuam dependendo de configuração.
+> **Domínio definitivo:** `https://assessoriacontabilmm.com`, configurado nos metadados e no pacote para a Locaweb. O envio à hospedagem segue o [guia de publicação](docs/LOCAWEB.md). A [prévia no GitHub Pages](https://esmael-v1c.github.io/site-contabilmm/) continua sendo atualizada automaticamente, com indexação desativada apenas nesse ambiente. Medições Google permanecem desativadas.
 
 ## Prévia
 
@@ -73,6 +73,7 @@ Também é possível abrir `index.html` diretamente; o servidor local é prefer�
 | `npm test` | Executa os testes de clientes, formulários, medição e SEO. |
 | `npm run seo` | Atualiza metadados, robots.txt e, quando configurado, sitemap.xml. |
 | `npm run build:pages` | Prepara o pacote estático de publicação em `_site/`. |
+| `npm run build:locaweb` | Prepara `_site/` para o domínio definitivo, com regras Apache e indexação permitida. |
 | `python scripts/validate.py` | Valida recursos, links, âncoras e metadados das cinco páginas. Requer Python 3. |
 
 O workflow [Qualidade](.github/workflows/ci.yml) executa as verificações em pushes e pull requests. Ele também verifica se os metadados gerados estão sincronizados com a configuração.
@@ -105,7 +106,7 @@ site-contabilmm/
 ## Configuração
 
 - **Contato:** edite `config.js`. O modo atual abre o WhatsApp; um endpoint próprio é opcional.
-- **SEO e domínio:** edite `seo.config.json` e execute `npm run seo`. `siteUrl` permanece vazio até a definição do domínio de produção.
+- **SEO e domínio:** `siteUrl` está configurado como `https://assessoriacontabilmm.com`. Após alterar metadados em `seo.config.json`, execute `npm run seo`.
 - **Medição:** informe os IDs e os hosts permitidos em `config.js`, seguindo o [guia de medição](docs/MEDICAO.md).
 - **Conteúdo e visual:** edite as páginas HTML, `style.css` e os recursos em `assets/`.
 
@@ -120,6 +121,8 @@ Os arquivos do frontend são públicos quando o site é hospedado. Credenciais p
 | [SEO e divulgação](docs/SEO-E-DIVULGACAO.md) | Domínio, metadados e preparação para lançamento. |
 | [Medição](docs/MEDICAO.md) | Consentimento, eventos e configuração de Ads / GA4. |
 | [GitHub Pages](docs/GITHUB-PAGES.md) | Acesso online e publicação automática. |
+| [Locaweb](docs/LOCAWEB.md) | Publicação definitiva, HTTPS e domínio. |
+| [Direitos autorais](docs/DIREITOS-AUTORAIS.md) | Licenças, créditos, declaração de autorização e limites da revisão. |
 | [Contribuição](CONTRIBUTING.md) | Fluxo de alterações e verificação antes do envio. |
 
 ## Autoria e materiais

@@ -11,6 +11,7 @@
     "check": "node --check script.js && node --check config.js && node --check measurement.js && node --check server.mjs && node --check scripts/build-seo.mjs && node --check scripts/build-pages.mjs && node --check clients.js",
     "seo": "node scripts/build-seo.mjs",
     "build:pages": "node scripts/build-pages.mjs",
+    "build:locaweb": "node scripts/build-pages.mjs --locaweb",
     "test": "node --test tests/*.test.cjs"
   }
 }

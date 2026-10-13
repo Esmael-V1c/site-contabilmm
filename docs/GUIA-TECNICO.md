@@ -24,7 +24,7 @@ Depois acesse http://127.0.0.1:4173. Para parar o servidor, pressione Ctrl+C no 
 - `script.js`: menu responsivo, animações e validação/envio do formulário.
 - `measurement.js`: Google Ads/GA4 opcionais com consentimento e eventos de contato.
 - `config.js`: modo de contato e número do WhatsApp; endpoint opcional e IDs/hosts de medição ainda vazios.
-- `seo.config.json`: metadados e domínio previsto; domínio ativo ainda vazio.
+- `seo.config.json`: metadados e domínio definitivo `https://assessoriacontabilmm.com`.
 - `scripts/build-seo.mjs`: gerador dos metadados estáticos, robots.txt e futuro sitemap.
 - `assets/`: imagens, logotipos e fontes; `sources.json` registra suas URLs de origem.
 - `server.mjs`: servidor local opcional, limitado a 127.0.0.1.
@@ -78,7 +78,7 @@ O último comando exige Python 3 (somente biblioteca padrão). Ele verifica arqu
 
 ## SEO e Google Ads
 
-O domínio previsto é `assessoriacontabilmm.com`. Nenhum domínio ou rastreador foi ativado: `siteUrl`, os IDs Google e `allowedHosts` continuam vazios. Consulte [o guia de SEO e lançamento](SEO-E-DIVULGACAO.md) e [o guia de medição](MEDICAO.md) para preencher as configurações e validar quando houver publicação.
+O domínio definitivo é `assessoriacontabilmm.com`; `siteUrl` está configurado e o sitemap foi gerado. O pacote para a Locaweb está preparado, mas o envio requer acesso à hospedagem. Os IDs Google e `allowedHosts` continuam vazios e nenhum rastreador foi ativado. Consulte [o guia de SEO e lançamento](SEO-E-DIVULGACAO.md) e [o guia de medição](MEDICAO.md) para preencher as configurações e validar quando houver publicação.
 
 O gerador já prepara metadados de Guarulhos e dados estruturados do escritório em HTML estático. Canonicals e sitemap são gerados somente após a ativação explícita do domínio. Cliques de WhatsApp/e-mail são separados de formulários confirmados; não representam vendas.
 

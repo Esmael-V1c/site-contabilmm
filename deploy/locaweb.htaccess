@@ -1,0 +1,19 @@
+# Instalar em public_html depois que o SSL do dominio e do www estiver ativo.
+# Se houver .htaccess da Locaweb, integrar estas regras preservando as diretivas do provedor.
+DirectoryIndex index.html
+Options -Indexes
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+# Preserva a validacao/renovacao do certificado Let's Encrypt.
+RewriteRule ^\.well-known/acme-challenge/ - [L]
+
+# Normaliza a pagina inicial sem descartar parametros da URL.
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
+RewriteRule ^index\.html$ https://assessoriacontabilmm.com/ [R=301,L]
+
+# Uma unica origem publica: HTTPS, sem www.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^assessoriacontabilmm\.com$ [NC]
+RewriteRule ^ https://assessoriacontabilmm.com%{REQUEST_URI} [R=301,L]

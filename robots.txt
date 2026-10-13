@@ -10,3 +10,4 @@ Disallow: /seo.config.json
 Disallow: /package.json
 Disallow: /package-lock.json
 Disallow: /server.mjs
+Sitemap: https://assessoriacontabilmm.com/sitemap.xml

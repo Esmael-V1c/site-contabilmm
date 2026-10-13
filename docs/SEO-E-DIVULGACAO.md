@@ -2,7 +2,7 @@
 
 ## Situação desta entrega
 
-O site está preparado para a assessoria de Guarulhos, com conteúdo local, títulos e descrições exclusivos, hierarquia de títulos, links por serviço e dados estruturados AccountingService. O domínio **previsto** é `https://assessoriacontabilmm.com`, mas permanece inativo em `seo.config.json`: `plannedSiteUrl` é só referência; `siteUrl` está vazio por solicitação do usuário. Nenhum domínio foi comprado ou configurado, nenhum site foi publicado e nenhuma campanha foi alterada.
+O site está preparado para a assessoria de Guarulhos, com conteúdo local, títulos e descrições exclusivos, hierarquia de títulos, links por serviço e dados estruturados AccountingService. O domínio **definitivo**, confirmado pelo responsável em 13/10/2026, é `https://assessoriacontabilmm.com`. `siteUrl` está preenchido, e canonical, sitemap e dados estruturados foram gerados. O domínio já responde na Locaweb; o envio do pacote à hospedagem está pendente de acesso. A prévia continua no GitHub Pages. Nenhuma campanha foi alterada.
 
 `robots.txt` permite a leitura das páginas e dos recursos visuais e exclui rotas auxiliares. Isso orienta robôs, mas não protege arquivos confidenciais. Não publique segredos nem a pasta `.git`. Os dados estruturados não incluem avaliação própria nem horários semanais: ainda faltam os dias de atendimento confirmados. A faixa de 8h00 às 17h30 continua visível na página Contato.
 
@@ -11,7 +11,7 @@ Os metadados são HTML estático; não dependem de JavaScript para serem lidos. 
 ## Ativar SEO no domínio definitivo
 
 1. Configure a hospedagem e o HTTPS quando for publicar. Escolha uma única variante de domínio, com ou sem `www`, e redirecione as demais para ela no provedor. O servidor `server.mjs` é apenas para desenvolvimento local.
-2. Em `seo.config.json`, copie o domínio confirmado para `siteUrl`, por exemplo `https://assessoriacontabilmm.com`. Manter `plannedSiteUrl` preenchido sozinho não ativa nada.
+2. `siteUrl` já está definido como `https://assessoriacontabilmm.com`. Preserve esta origem sem `www`; as regras para a hospedagem estão em `deploy/locaweb.htaccess` e no [guia Locaweb](LOCAWEB.md).
 3. Execute `npm run seo`. O comando atualiza títulos, descrições, dados estruturados, endereços canônicos, URLs de compartilhamento e gera `sitemap.xml` com as cinco páginas. A página inicial usa `/`; as internas usam seus arquivos `.html`. Publique novamente os arquivos gerados.
 4. Confira que as cinco páginas, `robots.txt` e `sitemap.xml` respondem corretamente no domínio final. Redirecione `/index.html` para `/` se o provedor permitir, preservando os parâmetros de campanha. Não redirecione páginas inexistentes indiscriminadamente para a página inicial: elas devem retornar 404.
 5. Verifique a propriedade no Google Search Console. Para propriedade de domínio, use o registro DNS fornecido pelo Google. Para a opção de prefixo de URL com tag HTML, cole somente o token em `searchConsoleVerification` e execute `npm run seo` novamente.

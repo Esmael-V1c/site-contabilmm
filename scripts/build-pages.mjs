@@ -1,9 +1,10 @@
-import { cpSync, existsSync, lstatSync, mkdirSync, realpathSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, lstatSync, mkdirSync, readFileSync, realpathSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = realpathSync(fileURLToPath(new URL('..', import.meta.url)));
 const output = path.resolve(root, '_site');
+const locaweb = process.argv.includes('--locaweb');
 const pages = ['index.html', 'servicos.html', 'sobre.html', 'contato.html', 'privacidade.html'];
 const files = [...pages, 'style.css', 'script.js', 'clients.js', 'measurement.js', 'config.js', 'robots.txt'];
 
@@ -19,6 +20,13 @@ if (existsSync(output)) {
 }
 mkdirSync(output);
 for (const file of files) cpSync(path.join(root, file), path.join(output, file));
+if (!locaweb && JSON.parse(readFileSync(path.join(root, 'seo.config.json'), 'utf8')).siteUrl) {
+  for (const file of pages) {
+    const target = path.join(output, file);
+    const html = readFileSync(target, 'utf8');
+    writeFileSync(target, html.replace(/<\/head>/i, '<meta name="robots" content="noindex, follow">\n</head>'));
+  }
+}
 cpSync(path.join(root, 'assets'), path.join(output, 'assets'), {
   recursive: true,
   filter: source => {
@@ -29,5 +37,6 @@ cpSync(path.join(root, 'assets'), path.join(output, 'assets'), {
 if (existsSync(path.join(root, 'sitemap.xml'))) {
   cpSync(path.join(root, 'sitemap.xml'), path.join(output, 'sitemap.xml'));
 }
-writeFileSync(path.join(output, '.nojekyll'), '');
-console.log(`GitHub Pages: ${pages.length} páginas preparadas em _site/.`);
+if (locaweb) cpSync(path.join(root, 'deploy/locaweb.htaccess'), path.join(output, '.htaccess'));
+else writeFileSync(path.join(output, '.nojekyll'), '');
+console.log(`${locaweb ? 'Locaweb' : 'GitHub Pages (prévia)'}: ${pages.length} páginas preparadas em _site/.`);

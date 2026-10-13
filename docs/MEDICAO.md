@@ -1,13 +1,13 @@
 # Google Ads e Analytics: preparação para ativação futura
 
-**Estado atual:** a integração está preparada e desativada. Nenhuma conta Google foi conectada, nenhuma tag Google é baixada e nenhum anúncio foi alterado. `googleAdsId`, `ga4Id`, os rótulos e `allowedHosts` estão vazios em `config.js`. O domínio previsto é `assessoriacontabilmm.com`; configurar esse nome não publica o site.
+**Estado atual:** a integração está preparada e desativada. Nenhuma conta Google foi conectada, nenhuma tag Google é baixada e nenhum anúncio foi alterado. `googleAdsId`, `ga4Id`, os rótulos e `allowedHosts` estão vazios em `config.js`. O domínio definitivo é `assessoriacontabilmm.com`; configurar esse nome não publica o site.
 
 ## Como ativar quando os identificadores estiverem disponíveis
 
 1. Publique e confirme o site no domínio final com HTTPS. Teste os contatos e as informações da empresa.
 2. No Google Ads, obtenha o **ID da tag Google Ads**, iniciado por `AW-`, e os **rótulos das ações de conversão**. São identificadores públicos da tag; não é necessário colocar senha, chave de API ou credencial no projeto.
 3. Em `config.js`, preencha `measurement.googleAdsId` com o ID `AW-` real. Em `conversionLabels`, preencha cada rótulo correspondente, sem incluir o ID ou a barra. Deixe vazio qualquer canal que não deva gerar conversão no Ads.
-4. Preencha `measurement.allowedHosts` somente com o domínio de produção efetivamente configurado. Para o domínio previsto, use `["assessoriacontabilmm.com"]`. Acrescente `www.assessoriacontabilmm.com` apenas se essa variante realmente servir o site. A correspondência é exata, sem protocolo, barra ou porta. Domínios de preview e ambiente local devem permanecer fora dessa lista.
+4. Preencha `measurement.allowedHosts` somente com o domínio de produção efetivamente configurado. Para o domínio definitivo, use `["assessoriacontabilmm.com"]`. Acrescente `www.assessoriacontabilmm.com` apenas se essa variante realmente servir o site. A correspondência é exata, sem protocolo, barra ou porta. Domínios de preview e ambiente local devem permanecer fora dessa lista.
 5. Opcionalmente, preencha `measurement.ga4Id` com o ID de um fluxo web GA4 (`G-`). **Antes de ativá-lo, desative “Medição otimizada/melhorada” (Enhanced measurement) no fluxo de dados**, inclusive cliques de saída, interações com formulário, pesquisa e page views automáticas de navegação. Esta implementação envia seus próprios eventos. Isso evita captura extra de URLs/textos e métricas duplicadas.
 6. Na configuração da tag/conta, não habilite coleta automática de dados fornecidos pelo usuário ou conversões otimizadas (enhanced conversions) sem uma implementação específica. Este projeto não envia nomes, e-mails, telefones, conteúdo de mensagens ou dados dos campos do formulário ao Google.
 7. Não instale outra tag direta ou um contêiner GTM medindo as mesmas ações em paralelo. Se a mesma ação for importada do GA4 e medida diretamente no Ads, escolha uma única fonte para usá-la como conversão principal.

@@ -27,6 +27,6 @@ O comando recria `_site/` com as cinco páginas, CSS, JavaScript e recursos visu
 
 Os links relativos existentes permitem abrir o site no subdiretório `/site-contabilmm/`. O servidor `server.mjs` é usado apenas no desenvolvimento. Os formulários continuam abrindo o WhatsApp para confirmação do visitante.
 
-`siteUrl` e as medições continuam com sua configuração existente: o endereço do Pages não ativa automaticamente o domínio de produção, Google Ads ou GA4.
+O domínio definitivo é `https://assessoriacontabilmm.com`, hospedado na Locaweb após o envio do pacote descrito em [LOCAWEB.md](LOCAWEB.md). O build do Pages acrescenta `noindex, follow` apenas à prévia, mantendo os canonicals do domínio definitivo. O build da Locaweb permite indexação. Nenhum ID Google foi ativado.
 
 Referência: [disponibilidade do GitHub Pages por plano](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages).

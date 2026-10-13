@@ -344,3 +344,6 @@ dialog p { line-height: 1.7; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 @media print { [data-reveal] { opacity: 1 !important; } }
+
+.map-attribution { margin: 8px 0 16px; padding: 0 12px; color: #52637b; font-size: 12px; text-align: center; }
+.map-attribution a, .site-footer small a { text-decoration: underline; text-underline-offset: 3px; }
