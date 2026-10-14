@@ -31,7 +31,7 @@ cpSync(path.join(root, 'assets'), path.join(output, 'assets'), {
   recursive: true,
   filter: source => {
     const relative = path.relative(path.join(root, 'assets'), source).split(path.sep);
-    return !relative.some(part => part.startsWith('.') || ['originals', 'restored', 'sources.json', 'restoration-notes.json'].includes(part));
+    return !relative.some(part => part.startsWith('.') || ['originals', 'restored', 'sources.json', 'restoration-notes.json', 'section_that_talks_more_about_us.png', 'start_about_us_page.png'].includes(part));
   }
 });
 if (existsSync(path.join(root, 'sitemap.xml'))) {

@@ -86,7 +86,7 @@ O gerador já prepara metadados de Guarulhos e dados estruturados do escritório
 
 A seção `#empresas` da página inicial reúne 24 logos (10 existentes e 14 enviados) em uma única lista HTML, sem duplicar o conteúdo entre celular e desktop. O título e os indicadores de clientes foram atualizados para +400 conforme informado pela assessoria.
 
-A página `sobre.html` também exibe as mesmas 24 empresas, imediatamente acima de `assets/start_about_us_page.png`. A variante `.clients-showcase--compact` acompanha a largura da imagem, com título em escala menor, logos de 100–112 px de altura e espaçamentos reduzidos. Ela compartilha `clients.js`, incluindo movimento contínuo, pausa por interação, setas e visualização em grade. Ao atualizar a lista de empresas, mantenha os cards das duas páginas sincronizados; os arquivos de imagem são compartilhados.
+A página `sobre.html` também exibe as mesmas 24 empresas, imediatamente acima de `assets/start_about_us_page.webp`. A variante `.clients-showcase--compact` acompanha a largura da imagem, com título em escala menor, logos de 100–112 px de altura e espaçamentos reduzidos. Ela compartilha `clients.js`, incluindo movimento contínuo, pausa por interação, setas e visualização em grade. Ao atualizar a lista de empresas, mantenha os cards das duas páginas sincronizados; os arquivos de imagem são compartilhados.
 
 O layout parte do celular, com arraste horizontal nativo e parte do próximo card visível. Em telas maiores, aumenta o número de cards. `clients.js` acrescenta setas, navegação por teclado, indicador da posição, pausa/retomada e botão para exibir toda a lista em grade. Sem JavaScript, as empresas continuam acessíveis por rolagem.
 

@@ -2,12 +2,25 @@
 
 Domínio confirmado pelo responsável: **https://assessoriacontabilmm.com**, sem `www`.
 
-## Estado em 13/10/2026
+## Estado em 14/10/2026
 
-- Domínio principal resolve para `179.188.55.15`; `www` é alias do domínio principal.
-- HTTPS responde nos dois endereços, mas a raiz retornou HTTP 403 com o título "Hospedagem Locaweb". Isso não confirma a publicação do site nem a configuração final de redirecionamentos.
-- Canonicals, URLs sociais, JSON-LD, sitemap e robots do projeto foram preparados para o domínio definitivo.
-- O envio dos arquivos à Locaweb requer acesso ao painel/FTP. O GitHub Actions atualiza somente a prévia do GitHub Pages.
+- Site publicado em `public_html/` na Hospedagem GO Linux. A pasta estava vazia antes do primeiro envio.
+- Domínio principal resolve para `179.188.55.15`; `www` é alias do domínio principal. Certificados HTTPS válidos para os dois nomes; painel indica renovação automática do Let's Encrypt.
+- Pacote de 100 arquivos enviado: 99 arquivos públicos conferidos byte a byte com a versão local, mais o `.htaccess`, cujo funcionamento foi verificado pelas respostas do servidor.
+- As cinco páginas, imagens, fontes, scripts, avisos de licença, `robots.txt` e `sitemap.xml` respondem corretamente. A versão definitiva permite indexação e usa o domínio confirmado nos canonicals, URLs sociais e JSON-LD.
+- HTTP, `www` e `/index.html` retornam 301 para HTTPS sem `www`, preservando parâmetros. Página inexistente retorna 404; listagem de diretórios e leitura pública do `.htaccess` retornam 403.
+- GitHub Actions atualiza **somente a prévia do GitHub Pages**. Alterações futuras no repositório precisam ser enviadas também à Locaweb pelo procedimento abaixo.
+
+### Imagens otimizadas
+
+O Web FTP rejeitou duas imagens PNG maiores durante o envio. Foram publicadas versões WebP sem perda, com as mesmas dimensões e comparação de pixels RGBA idêntica aos originais:
+
+| Recurso | PNG original | WebP publicado |
+| --- | ---: | ---: |
+| `section_that_talks_more_about_us` | 1.336.338 bytes | 895.276 bytes |
+| `start_about_us_page` | 1.180.452 bytes | 769.774 bytes |
+
+Os PNGs permanecem no repositório como originais, mas são excluídos do pacote público. `sobre.html` utiliza as versões WebP.
 
 ## Gerar o pacote
 

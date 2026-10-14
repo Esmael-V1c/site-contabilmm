@@ -15,7 +15,7 @@
 
   <p>
     <a href="#comece-aqui">Comece aqui</a> ·
-    <a href="https://esmael-v1c.github.io/site-contabilmm/">Abrir site</a> ·
+    <a href="https://assessoriacontabilmm.com/">Abrir site</a> ·
     <a href="#o-que-o-site-entrega">Recursos</a> ·
     <a href="docs/README.md">Documentação</a> ·
     <a href="CONTRIBUTING.md">Contribuir</a>
@@ -30,7 +30,7 @@ Cinco páginas institucionais construídas com HTML, CSS e JavaScript, com image
 
 **Sem etapa de build para navegar.** O Node.js executa o servidor de desenvolvimento, o gerador de SEO e os testes. Python é usado na validação dos arquivos HTML.
 
-> **Domínio definitivo:** `https://assessoriacontabilmm.com`, configurado nos metadados e no pacote para a Locaweb. O envio à hospedagem segue o [guia de publicação](docs/LOCAWEB.md). A [prévia no GitHub Pages](https://esmael-v1c.github.io/site-contabilmm/) continua sendo atualizada automaticamente, com indexação desativada apenas nesse ambiente. Medições Google permanecem desativadas.
+> **Site publicado:** [assessoriacontabilmm.com](https://assessoriacontabilmm.com/), na Locaweb, com HTTPS e redirecionamentos verificados em 14/10/2026. As próximas atualizações devem seguir o [guia de publicação](docs/LOCAWEB.md). A [prévia no GitHub Pages](https://esmael-v1c.github.io/site-contabilmm/) continua sendo atualizada automaticamente, com indexação desativada apenas nesse ambiente. Medições Google permanecem desativadas.
 
 ## Prévia
 
